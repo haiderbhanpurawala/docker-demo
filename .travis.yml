@@ -7,3 +7,5 @@ before_install:
 
 script:
   - docker run -e CI=true haiderbhanpurawala/docker-demo npm run test
+
+# Comment out the deploy section for now
