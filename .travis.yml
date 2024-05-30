@@ -7,5 +7,11 @@ before_install:
 
 script:
   - docker run -e CI=true haiderbhanpurawala/docker-demo npm run test
-
+  region: "ap-south-1"
+  app: "docker"
+  env: "docker-env"
+  bucket_name: "elasticbeanstalk-ap-south-1-882130000382"
+  bucket_path: "docker"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
 # Comment out the deploy section for now
